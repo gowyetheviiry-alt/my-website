@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gaming promotional landing page" />
+  <title>GOWYE Gaming — Claim Rewards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="brand">BGMI <span>×</span> GOWYE</div>
+    <div class="sponsor">GAMING EVENT</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="glow"></div>
+      <p class="eyebrow">LIMITED-TIME GAMING EVENT</p>
+      <h1>FOOL M416<br><span>IS HERE</span></h1>
+      <p class="subtitle">Sign up to enter the event and unlock the rewards.</p>
+      <button class="primary-btn" id="heroSignup">SIGN UP & CLAIM</button>
+    </section>
+
+    <section class="rewards" id="rewards">
+      <div class="section-title">
+        <p>EVENT REWARDS</p>
+        <h2>CLAIM YOUR REWARDS</h2>
+      </div>
+
+      <div class="cards">
+        <article class="reward-card">
+          <div class="reward-art rifle">M416</div>
+          <h3>Fool M416</h3>
+          <p>Featured reward</p>
+          <button class="claim-btn" data-reward="Fool M416">CLAIM NOW</button>
+        </article>
+
+        <article class="reward-card">
+          <div class="reward-art token">10</div>
+          <h3>Upgrade Token</h3>
+          <p>Limited event item</p>
+          <button class="claim-btn" data-reward="10 Upgrade Tokens">CLAIM NOW</button>
+        </article>
+
+        <article class="reward-card">
+          <div class="reward-art uc">UC</div>
+          <h3>Bonus UC</h3>
+          <p>Event bonus reward</p>
+          <button class="claim-btn" data-reward="Bonus UC">CLAIM NOW</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="signup" id="signup">
+      <div class="form-wrap">
+        <p class="eyebrow">FREE EVENT ENTRY</p>
+        <h2>JOIN THE EVENT</h2>
+        <p class="form-note">Enter only the information needed to contact you about this event. Never enter your password or OTP.</p>
+
+        <form id="signupForm">
+          <label>
+            Display name
+            <input id="name" type="text" maxlength="40" placeholder="Your gaming name" required />
+          </label>
+
+          <label>
+            Email
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Preferred reward
+            <select id="reward" required>
+              <option value="">Select a reward</option>
+              <option>Fool M416</option>
+              <option>10 Upgrade Tokens</option>
+              <option>Bonus UC</option>
+            </select>
+          </label>
+
+          <button class="primary-btn full" type="submit">SUBMIT SIGN-UP</button>
+        </form>
+
+        <div class="success" id="success">
+          <strong>You're signed up! 🎉</strong>
+          <span id="successText"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>GOWYE GAMING</span>
+    <span>© 2026 — Fan-made promotional demo</span>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
